@@ -1,1 +1,8 @@
 <h1>Welcome!</h1>
+
+<% @data.each do |article| %> 
+<%= link_to(article.link) do %>
+   <p><%= article.headline %></p>
+   <p><%= article.description %></p>
+ <%end %>
+<% end %>
