@@ -1,8 +1,12 @@
 <h1>Welcome!</h1>
 
-<% @data.each do |article| %> 
-<%= link_to(article.link) do %>
-   <p><%= article.headline %></p>
-   <p><%= article.description %></p>
- <%end %>
+<% @data.each do |key, news_group| %>
+<section class='news-group'>
+  <h2 class='news-group-name'><%= key.to_s.split('_').map!{|a| a.capitalize!}.join(' ')%></h2>
+  <% news_group.each do |article| %>
+    <%= link_to(article.link, class: 'article') do %>
+      <p><%= article.headline %></p>
+    <% end %>
+  <% end %>
+</section>  
 <% end %>
