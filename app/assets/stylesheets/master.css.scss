@@ -1,0 +1,122 @@
+.title-background-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.title-background {
+  background: url('background.jpeg');
+  background-repeat: repeat; 
+  background-position: top center; 
+  background-attachment: scroll; 
+  background-size: cover;     
+}
+
+.by-me a {
+  color: #9CA959;
+}
+
+.by-me a:hover {
+  color: #5780A0;
+  text-decoration: none;
+}
+
+.app-title{
+  color: white;
+  margin: 0px;
+}
+
+.app-title p {
+  margin:0px;
+}
+
+.straitstimes {
+  background: url('straitstimes.jpg');
+}
+
+.bbcnews{
+ background: url('bbc.jpg'); 
+}
+
+.bloomberg{
+ background: url('bloomberg.jpg'); 
+}
+
+.app-title h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 70px;
+  font-weight: bold;
+  margin:0px;  
+}
+
+.news-group {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  color: white;
+  margin: 0px;
+}
+
+.news-group h2 {
+  color: #9CA959;  
+}
+
+.article {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+.article:hover {
+  color: #5780A0;
+  text-decoration: none;
+}
+
+.news-group {
+  background-repeat: repeat; 
+  background-position: top center; 
+  background-attachment: scroll; 
+  background-size: cover; 
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #59626d;
+  color: #ccc;
+  margin:0px;
+}
+
+.news-group:before {
+  content: '';
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.news-group-inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hideme{
+  opacity:0;
+}
+
+@media (max-width: 750px) {
+  .by-me {
+    display: none;
+  }
+}

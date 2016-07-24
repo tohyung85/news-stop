@@ -1,0 +1,79 @@
+$footer-height: 100px;
+$footer-height-mobile:200px;
+/* Set the fixed height of the footer here */
+
+#footer {
+  height: $footer-height;
+  //background-color: rgba(36,32,33,0.9);
+  color: white;
+  padding: 10px 0px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+#footer {
+  background: url('background.jpeg');
+  background-repeat: repeat; 
+  background-position: bottom center; 
+  background-attachment: scroll; 
+  background-size: cover;    
+}
+.footer-comments{
+  display: flex;
+  justify-content: center;
+  margin:0;
+  padding: 0;
+}
+
+#footer .footer-comments a {
+  color: #9CA959;
+}
+
+#footer .footer-comments a:hover {
+  color: #5780A0;
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social li {
+  color: #616161;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+#footer-social a {
+  font-size: 16px;
+}
+
+#footer a{
+  color: white;
+}
+
+#footer a:hover {
+  color: #5780A0;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  #footer .social {
+    margin-top: 10px;
+  }
+
+  #footer {
+    height: $footer-height-mobile;
+  }
+}

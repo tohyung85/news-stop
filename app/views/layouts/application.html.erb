@@ -2,13 +2,40 @@
 <html>
 <head>
   <title>NewsStop</title>
+  <meta name="viewport" content="initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.viewportchecker.min' %>
+  <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class='container-fluid title-background'>
+  <div class='col-xs-10 col-xs-offset-1 title-background-inner'>
+    <div class='app-title'>
+      <h1>NewsStop</h1>
+      <p>Your one-stop news stand!</p>
+    </div>
+    <div class='by-me'>
+      Brought to you by <%= link_to 'Joshua', "https://joshuatan.herokuapp.com" %>
+    </div>
+  </div>
+  </div>
+  <%= yield %>
 
-<%= yield %>
+    <div id="footer">
+
+      <p class="footer-comments">Brought to you by &nbsp<%= link_to 'Joshua', "https://joshuatan.herokuapp.com" %></p>
+      
+      <ul class="footer-social">
+        <li><a href="https://mobile.twitter.com/tantohyung"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100012764088443"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://plus.google.com/103690899611882314643/posts"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/tohyung85"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+
+      <p>Disclaimer: The above articles are property of the respective companies and I in no way claim to own any of the above articles.</p>
+  </div>
 
 </body>
 </html>
