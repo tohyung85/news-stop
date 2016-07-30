@@ -1,6 +1,3 @@
-require 'mechanize'
-require 'NewsArticle'
-
 class PageCrawler
 
   include ActiveModel::Validations
