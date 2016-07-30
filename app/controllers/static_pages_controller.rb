@@ -1,5 +1,3 @@
-require 'PageCrawler'
-
 class StaticPagesController < ApplicationController
   def index
     crawler = PageCrawler.new
